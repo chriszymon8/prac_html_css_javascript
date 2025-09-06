@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          keyframes: {
+            fadeIn: {
+              "0%": { opacity: 0 },
+              "100%": { opacity: 1 },
+            },
+            fadeOut: {
+              "0%": { opacity: 1 },
+              "100%": { opacity: 0 },
+            },
+          },
+          animation: {
+            fadeIn: "fadeIn 0.6s ease-out forwards",
+            fadeOut: "fadeOut 0.6s ease-out forwards",
+          },
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-sky-600 opacity-0 animate-fadeIn">
+
+  <!-- Header -->
+  <header class="bg-sky-600 shadow-md">
+    <div class="container mx-auto flex items-center justify-between p-4">
+      <!-- Logo -->
+      <div class="text-2xl font-bold text-green-600">
+        MyLogo
+      </div>
+
+      <!-- Navigation -->
+      <nav>
+        <ul class="flex space-x-6 text-gray-200 font-medium">
+          <li><a href="index.html" class="nav-link hover:text-white">Home</a></li>
+          <li><a href="about.html" class="nav-link hover:text-white">About</a></li>
+          <li><a href="services.html" class="nav-link hover:text-white">Services</a></li>
+          <li><a href="contact.html" class="nav-link hover:text-white">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="h-screen flex flex-col items-center justify-center text-white">
+    <h1 class="text-5xl font-bold">Welcome to Home</h1>
+    <p class="mt-4 text-lg">This is the homepage with fade animation.</p>
+  </main>
+
+  <script>
+    // Page transition script
+    document.querySelectorAll(".nav-link").forEach(link => {
+      link.addEventListener("click", e => {
+        e.preventDefault();
+        document.body.classList.remove("animate-fadeIn");
+        document.body.classList.add("animate-fadeOut");
+        setTimeout(() => {
+          window.location.href = link.href;
+        }, 600); // match fadeOut duration
+      });
+    });
+  </script>
+</body>
+</html>

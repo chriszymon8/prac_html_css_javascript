@@ -1,0 +1,51 @@
+body {
+  justify-items: center;
+
+}
+.container {
+  margin-top: 20%;
+
+}
+
+a {
+    text-decoration: none;
+}
+.fa-brands {
+  font-size: 50px;        /* icon size */
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+  color: #333;            /* default color */
+  text-decoration: none;
+  margin: 0 25px;
+  display: grid;
+  place-items: center;
+
+}
+
+.fa-facebook {
+  color: rgb(46, 18, 204); /* facebook blue */
+}
+
+/* ✅ hover effect only triggers on hover */
+.fa-brands:hover {
+  transform: scale(1.1);   /* zoom effect */
+  color: #000;             /* optional: change color on hover */
+}
+
+.fa-instagram {
+  font-size: 50px;        /* icon size */
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+  color: #333;            /* default color */
+  text-decoration: none;
+}
+
+.fa-instagram {
+  color: rgb(180, 14, 14); /* facebook blue */
+}
+
+/* ✅ hover effect only triggers on hover */
+.fa-instagram:hover {
+  transform: scale(1.1);   /* zoom effect */
+  color: #000;             /* optional: change color on hover */
+}
