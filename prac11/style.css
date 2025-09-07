@@ -1,0 +1,9 @@
+body {
+    background-color: rgb(241, 224, 198);
+}
+
+@media(max-width: 600px) {
+    body{
+        background-color: black;
+    }
+}
