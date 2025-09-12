@@ -7,6 +7,41 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"/>
     <link rel="icon" href="/MyPortfolio_v1/images/cropped_circle_image.png">
     <title>My Portfolio</title>
+    <style>
+        @keyframes appear {
+            from {
+                opacity: 0;
+                scale: 0.5;
+            }
+            to {
+                opacity: 1;
+                scale: 1;
+            }
+        }
+
+        img {
+            animation: appear linear;
+            animation-timeline: view();
+            animation-range: entry 30%;
+        }
+        video {
+            animation: appear linear;
+            animation-timeline: view();
+            animation-range: entry 30%;
+        }
+        
+ 
+        ::-webkit-scrollbar {
+            background: beige;
+            width: 0;
+
+        }
+        ::-webkit-scrollbar-thumb {
+            background: rgb(0, 0, 0);
+            border-radius: 20px;
+            height: 50px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -14,8 +49,8 @@
             <h1>MyPortfolio</h1>
             <ul class="links">
                 <li><a href="/MyPortfolio_v1/index.html">Home</a></li>
-                <li><a href="/MyPortfolio_v1/about.html" class="active">About</a></li>
-                <li><a href="/MyPortfolio_v1/project.html">Projects</a></li>
+                <li><a href="/MyPortfolio_v1/about.html">About</a></li>
+                <li><a href="/MyPortfolio_v1/project.html" class="active">Projects</a></li>
             </ul>
         </nav>
     </header>
@@ -33,7 +68,7 @@
         <img src="/MyPortfolio_v1/images/photography_pic/_MG_4744.jpg">
 
         <video class="big-video1" controls loop>
-            <source src="/Midterm_Act/images/vido_edit/slog3.mp4" type="video/mp4">
+            <source src="/MyPortfolio_v1/images/vido_edit/slog3.mp4" type="video/mp4">
         </video>
 
         <img src="/MyPortfolio_v1/images/photography_pic/blue.png">
@@ -41,6 +76,7 @@
         <img src="/MyPortfolio_v1/images/photography_pic/IMG_4670.jpg">
         <img src="/MyPortfolio_v1/images/photography_pic/pusa.png">
         <img src="/MyPortfolio_v1/images/photography_pic/IMG_3857.jpg">
+        
         <video class="big-video1" controls loop>
             <source src="/MyPortfolio_v1/images/vido_edit/white ferrari.mp4" type="video/mp4">
         </video>

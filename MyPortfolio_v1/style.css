@@ -5,13 +5,27 @@
 
 
 }
-body{
-    width: 100%;
-    opacity: 0;
-    animation: fadeIn 0.5s ease forwards;
-  background-color: beige;
+html {
+  scroll-behavior: smooth;
 }
+body{
+  width: 100%;
+  opacity: 0;
+  animation: fadeIn 0.5s ease forwards;
+  background-color: beige;
+  
+  
+}
+::-webkit-scrollbar {
+  background: beige;
+  width: 0;
 
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(0, 0, 0);
+  border-radius: 20px;
+  height: 50px;
+}
 @keyframes fadeIn {
   to {
     opacity: 1;
@@ -343,9 +357,8 @@ nav ul li a.active {
   background: #222;
   color: #fff;
   text-align: center;
-  padding: 10px 0;   /* reduce top & bottom space */
-  font-size: 14px;   /* smaller text */
-  line-height: 1.4;  /* tighter spacing */
+  padding: 50px 20px;
+  font-size: 14px;   
 }
 .contact .footer h2 {
   margin-bottom: 10px;
@@ -368,10 +381,12 @@ nav ul li a.active {
   color: #fff;
   font-size: 22px;
   transition: color 0.3s ease, transform 0.2s ease;
+  
 }
 
 footer .social-icons {
   margin: 5px 0; /* reduce gap between icons */
+  
 }
 
 .footer-socials a:hover {
@@ -390,6 +405,7 @@ footer .social-icons {
   padding: 2rem;
   text-align: center;
   background: #ebebeb;
+  
 }
 
 .grid {
@@ -443,26 +459,82 @@ footer .social-icons {
   max-height: 500px;       
 }
 
+/* ✅ Testimonials Section (full width sagad) */
 .testimonials {
-  padding: 2rem;
+  max-width: 200%;
+  width: 103.6%;
+  background: #f8f3f3; /* pwede mong palitan */
   text-align: center;
-  background: #fff;
-}
-blockquote {
-  font-style: italic;
-  margin: 2rem 0;
+  padding: 60px 20px;
+  margin-left: -35px;
 }
 
-.contact {
-  padding: 2rem;
+.testimonials h2 {
+  font-size: 28px;
+  margin-bottom: 25px;
+  font-weight: bold;
+  color: #111;
+}
+
+.testimonials blockquote {
+  font-style: italic;
+  margin: 15px auto;
+  max-width: 700px;
+  color: #333;
+}
+
+/* ✅ Footer Section (full width sagad) */
+.footer1 {
+  width: 103.6%;
+  background: #111;
+  color: #fff;
   text-align: center;
-  background: #222;
-  color: white;
+  padding: 50px 20px;
+  margin-left: -35px;
+  margin-bottom: -35px;
 }
-.contact a {
-  color: #f39c12;
-  text-decoration: none;
+
+.footer1 h2 {
+  margin-bottom: 10px;
 }
+
+.footer1 p {
+  margin: 5px 0;
+  font-size: 15px;
+  color: #ccc;
+}
+
+/* ✅ Footer Social Icons */
+.footer-socials {
+  margin: 1.5rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-socials a {
+  font-size: 22px;
+  color: #f9fafb;
+  background: #1f2937;
+  padding: 12px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.footer-socials a:hover {
+  background: #fbbf24;
+  color: #111;
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+/* ✅ Footer Copy */
+.footer-copy {
+  font-size: 13px;
+  color: #777;
+  margin-top: 10px;
+}
+
 
 .gallery h2 {
   margin: 20px 0;
