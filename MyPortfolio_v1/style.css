@@ -17,8 +17,7 @@ body{
   
 }
 ::-webkit-scrollbar {
-  background: beige;
-  width: 0;
+  background: transparent;
 
 }
 ::-webkit-scrollbar-thumb {
@@ -33,17 +32,32 @@ body{
 }
 
 @font-face {
+  font-family: "Hallo";
+  src: url(/MyPortfolio_v1/font/Hallo\ Almond.ttf);
+}
+
+@font-face {
+  font-family: "Vigofam";
+  src: url(/MyPortfolio_v1/font/Vigofam.ttf);
+}
+
+@font-face {
     font-family: "FatCat";
-    src: url(/MyPortfolio_v1/Fat\ Kat.com.ttf);
+    src: url(/MyPortfolio_v1/font/Fat\ Kat.com.ttf);
 }
 
 @font-face {
     font-family: "Mogilte";
-    src: url(/MyPortfolio_v1/Mogilte.otf);
+    src: url(/MyPortfolio_v1/font/Mogilte.otf);
 }
 @font-face {
   font-family: "MagicRetro";
-  src: url(/MyPortfolio_v1/Magic\ Retro.ttf);
+  src: url(/MyPortfolio_v1/font/Magic\ Retro.ttf);
+}
+
+@font-face {
+  font-family: "Clemente";
+  src: url(/MyPortfolio_v1/font/ClementePDai-Regular.ttf);
 }
 header {
     position: fixed;
@@ -195,6 +209,14 @@ nav ul li a.active {
   padding: 25px;
   color: #ffffff;
   
+}
+
+.about-text h2 {
+  font-family: "Clemente";
+}
+
+.about-text {
+  font-family: "Clemente";
 }
 .cv-btn {
   display: inline-block;
@@ -459,11 +481,11 @@ footer .social-icons {
   max-height: 500px;       
 }
 
-/* ✅ Testimonials Section (full width sagad) */
+
 .testimonials {
   max-width: 200%;
   width: 103.6%;
-  background: #f8f3f3; /* pwede mong palitan */
+  background: #f8f3f3; 
   text-align: center;
   padding: 60px 20px;
   margin-left: -35px;
@@ -483,7 +505,7 @@ footer .social-icons {
   color: #333;
 }
 
-/* ✅ Footer Section (full width sagad) */
+
 .footer1 {
   width: 103.6%;
   background: #111;
@@ -504,7 +526,7 @@ footer .social-icons {
   color: #ccc;
 }
 
-/* ✅ Footer Social Icons */
+
 .footer-socials {
   margin: 1.5rem 0;
   display: flex;
@@ -528,7 +550,7 @@ footer .social-icons {
   box-shadow: 0 6px 15px rgba(0,0,0,0.3);
 }
 
-/* ✅ Footer Copy */
+
 .footer-copy {
   font-size: 13px;
   color: #777;
@@ -571,7 +593,7 @@ footer .social-icons {
 .big-video1 {
   grid-column: span 2; 
   width: 100%;
-  max-height: 500px;   /* control height if needed */
+  max-height: 500px;   
 }
 
 .gallery video {
@@ -613,7 +635,7 @@ footer .social-icons {
 .big-video {
   grid-column: span 2; 
   width: 100%;
-  max-height: 500px;   /* control height if needed */
+  max-height: 500px;   
 }
 
 .thirdi-gallery video {
